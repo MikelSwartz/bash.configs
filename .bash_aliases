@@ -2,3 +2,10 @@
 alias tv='mplayer -geometry 1690:10 -fs -mixer-channel Master'
 #alias vncserver='vncserver -depth 24 -geometry 1365x740 -geometry 1280x768 -geometry 1920x1080'
 #alias gzipcf="for i in $(ls -lrS |grep -v .gz|awk '/^-/'| awk '{ print $NF }'); do if [ "$( $(whereis lsof |awk '{ print $2}') $i |grep "PID" )" = "" ]; then echo "gzipping $i size $(ls -lh $i |awk {'print $5}')$(gzip -9f $i) now $i.gz is $(ls -lh $i.gz |awk {'print $5}')"; fi; done;echo;echo "Gzip of $(pwd) log files on $(hostname) was successful. File system is now at $(df $(pwd)| tail -n -1|awk '{print $(NF-1)}').";echo"
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
